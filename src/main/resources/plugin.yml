@@ -1,0 +1,34 @@
+name: ArenaCore
+main: me.arena.ArenaCore
+version: 1.0.0
+api-version: '1.21.11'
+description: Lobby, PvP gamemodes, kit editor, duels, map protection and anticheat.
+commands:
+  setlobby:
+    description: Set the lobby spawn
+  setarena:
+    description: Set the FFA arena spawn for a gamemode
+    usage: /setarena <mode>
+  setduel:
+    description: Set a duel arena spawn point
+    usage: /setduel <arenaName> <1|2>
+  duel:
+    description: Challenge a player to a duel
+    usage: /duel <player> | /duel accept <player> | /duel deny
+  kiteditor:
+    description: Edit your kits
+    aliases: [kit, editkit]
+  lobby:
+    description: Return to the lobby
+    aliases: [spawn, hub]
+permissions:
+  arena.admin:
+    default: op
+  arena.build:
+    default: op
+  arena.bypass:
+    description: Bypass anticheat
+    default: false
+  arena.alerts:
+    description: See anticheat alerts
+    default: op

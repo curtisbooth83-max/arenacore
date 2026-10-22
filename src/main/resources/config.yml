@@ -1,0 +1,8 @@
+# Locations (lobby, arenas, duelarenas) are written here by /setlobby, /setarena, /setduel.
+temp-block-seconds: 20     # blocks players place in matches vanish after this (map is restored)
+anticheat:
+  enabled: true
+  kick-vl: 30
+  max-cps: 22
+  max-reach: 3.6
+  spear-reach: 6.0
